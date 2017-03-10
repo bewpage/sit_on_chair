@@ -1,0 +1,79 @@
+
+/*general styles*/
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+header::before, header::after,
+section::before, section::after,
+footer::before, footer::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.main__width {
+	width: 1400px;
+	margin: 0 auto;
+}
+
+.floatLeft {
+  float: left;
+}
+
+.floatRight {
+  float: right;
+}
+
+.clearfix::before, .clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+
+
+/*header style*/
+body > header {
+	width: 100%;
+  border: 1px solid red;
+  background-color: black;
+}
+
+
+header div {
+  height: 100px;
+  color: white;
+  border: 1px solid red;
+}
+
+header div a {
+  line-height: 80px;
+  font-size: 14px;
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+}
+
+.header__logo {
+  width: 200px;
+  float:left;
+}
+
+nav.header__main-nav {
+  float: right;
+}
+
+.header__main-nav ul li {
+	display: inline-block;
+	margin-left: 25px;
+	margin-right: 25px;
+}
+
+.header__main-nav ul li a {
+	line-height: 80px;
+	font-size: 14px;
+	display: inline-block;
+	text-decoration: none;
+	color: white;
+}
