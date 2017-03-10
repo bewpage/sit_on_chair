@@ -13,8 +13,9 @@ footer::before, footer::after {
 }
 
 .main__width {
-	width: 1400px;
+	width: 800px;
 	margin: 0 auto;
+  border:1px solid green;
 }
 
 .floatLeft {
@@ -31,27 +32,33 @@ footer::before, footer::after {
   display: block;
 }
 
+.uppercase {
+  text-transform: uppercase;
+}
 
+a {
+  text-decoration: none;
+  font-size: 12px;
+}
 
 /*header style*/
 body > header {
 	width: 100%;
   border: 1px solid red;
   background-color: black;
+  height: 50px;
+  line-height: 50px;
+
 }
 
 
 header div {
-  height: 100px;
   color: white;
   border: 1px solid red;
 }
 
 header div a {
-  line-height: 80px;
-  font-size: 14px;
   display: inline-block;
-  text-decoration: none;
   color: white;
 }
 
@@ -60,20 +67,53 @@ header div a {
   float:left;
 }
 
+/*menu*/
 nav.header__main-nav {
   float: right;
 }
 
-.header__main-nav ul li {
+nav a {
+  color: white;
+}
+
+body nav ul li {
 	display: inline-block;
 	margin-left: 25px;
 	margin-right: 25px;
 }
 
+nav > ul > li a:hover {
+  border-bottom: 2px solid #24ba9f;
+  padding-bottom: 15px;
+}
+
 .header__main-nav ul li a {
-	line-height: 80px;
+	line-height: 20px;
 	font-size: 14px;
 	display: inline-block;
 	text-decoration: none;
 	color: white;
+}
+
+nav > ul ul > li {
+  display: none;
+}
+
+
+/*section slider*/
+
+.slider__image img {
+  background-size: cover;
+  border: 1px solid black;
+  background-size: cover;
+}
+
+.slider__text p {
+  border: 1px solid black;
+  line-height: 500px;
+}
+
+.slider {
+  height: 500px;
+  background-color: white;
 }

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Sit On Chair</title>
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="./css/reset.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 
 
@@ -13,48 +13,60 @@
     <header>
       <div class="main__width">
         <div class="header__logo">
-          <a href="#" title="Main page">sit on chair</a>
+
+            <a href="#" title="Main page">sit on chair</a>
+
         </div>
-        <nav class="header__main-nav">
+        <nav class="header__main-nav uppercase">
   				<ul>
   					<li>
               <a href="#" title="o firmie">o firmie</a>
-              <ul>
+              <ul class="submenu">
                 <li><a href="#" title="aktualnosci">aktualnosci</a></li>
                 <li><a href="#" title="nasz team">nasz team</a></li>
                 <li><a href="#" title="historia">historia</a></li>
+                <span></span>
               </ul>
             </li>
   					<li>
-              <a href="#" title="">galeria</a>
+              <a href="#" title="galeria">galeria</a>
             </li>
   					<li>
-              <a href="#">kontakt</a>
+              <a href="#" title="kontakt">kontakt</a>
             </li>
   				</ul>
   			</nav>
       </div>
     </header>
 <!-- 4 sections -->
-    <section id="slider">
+    <section class="slider">
       <div class="main__width slider">
-
+        <span>&gt;</span>
+        <!-- klasa arrow( absolute, ten sam top) left (left:0) -->
+        <div class="slider__image floatLeft">
+          <img src="./images/black_chair.png" alt="slider image">
+        </div>
+        <div class="slider__text floatRight">
+          <p>sit on our chair</p>
+        </div>
+        <span> &lt; </span>
+        <!-- klasa arrow( absolute, ten sam top) right (right:0) -->
       </div>
     </section>
 
-    <section id="products">
+    <section class="products">
       <div class="main__width ">
 
       </div>
     </section>
 
-    <section id="offer">
+    <section class="offer">
       <div class="main__width">
 
       </div>
     </section>
 
-    <section id="contact">
+    <section class="contact">
       <div class="main__width">
 
       </div>
