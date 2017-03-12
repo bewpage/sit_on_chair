@@ -13,7 +13,7 @@ footer::before, footer::after {
 }
 
 .main__width {
-	width: 800px;
+	width: 920px;
 	margin: 0 auto;
   border:1px solid green;
 }
@@ -48,9 +48,7 @@ body > header {
   background-color: black;
   height: 50px;
   line-height: 50px;
-
 }
-
 
 header div {
   color: white;
@@ -99,21 +97,84 @@ nav > ul ul > li {
   display: none;
 }
 
-
 /*section slider*/
+.article-left {
+  width: 50%;
+}
+
+.article-right {
+  width: 50%;
+}
+
+.slider {
+  height: 500px;
+  background-color: lightgray;
+}
 
 .slider__image img {
   background-size: cover;
   border: 1px solid black;
   background-size: cover;
+  margin-top: 100px;
 }
 
-.slider__text p {
-  border: 1px solid black;
-  line-height: 500px;
+div.slider__text {
+border: 1px solid black;
+margin-top: 100px;
+padding-top: 50px;
+padding-right: 50px;
+text-align: center;
+
 }
 
-.slider {
-  height: 500px;
-  background-color: white;
+div.slider__text > h1 {
+  padding-bottom: 25px;
+  color: black;
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+div.slider__text h1 > span {
+  color: blue;
+}
+
+div.slider__text p {
+font-size: 18px;
+}
+
+div.slider__text div.button-slider {
+  margin: 0 auto;
+  margin-top: 25px;
+  line-height: 50px;
+  border-radius: 15px;
+  background-color: lime;
+  height: 50px;
+  width: 150px;
+  text-transform: uppercase;
+  font-size: 15px;
+
+}
+
+div.slider__text .button-slider a {
+  color: white;
+}
+
+div.relative {
+  position: relative;
+}
+
+div.arrow-left {
+  position: absolute;
+  font-size: 100px;
+  color: red;
+  top: 200px;
+  left: 0px;
+}
+
+div.arrow-right {
+  position: absolute;
+  font-size: 100px;
+  color: red;
+  top: 200px;
+  right: 0px;
 }
