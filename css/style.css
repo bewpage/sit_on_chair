@@ -1,5 +1,6 @@
 
-/*general styles*/
+/*-------------------general styles---------------------*/
+/*CSS reset in external file*/
 body {
   font-family: 'Raleway', sans-serif;
 }
@@ -13,9 +14,8 @@ footer::before, footer::after {
 }
 
 .main__width {
-	width: 920px;
+	width: 1000px;
 	margin: 0 auto;
-  border:1px solid green;
 }
 
 .floatLeft {
@@ -41,10 +41,15 @@ a {
   font-size: 12px;
 }
 
-/*header style*/
+/*color settings*/
+.cyan {
+  color: rgb(36, 186, 159);
+  font-weight: 700;
+}
+
+/*-------------------------header style--------------------*/
 body > header {
 	width: 100%;
-  border: 1px solid red;
   background-color: black;
   height: 50px;
   line-height: 50px;
@@ -65,13 +70,10 @@ header div a {
   float:left;
 }
 
-/*menu*/
+/*-----------------------menu--------------------------*/
 nav.header__main-nav {
   float: right;
-}
-
-nav a {
-  color: white;
+  position: relative;
 }
 
 body nav ul li {
@@ -82,77 +84,105 @@ body nav ul li {
 
 nav > ul > li a:hover {
   border-bottom: 2px solid #24ba9f;
-  padding-bottom: 15px;
+}
+
+.header__main-nav li:hover ul.submenu {
+  display: block;
 }
 
 .header__main-nav ul li a {
-	line-height: 20px;
 	font-size: 14px;
 	display: inline-block;
 	text-decoration: none;
 	color: white;
 }
 
-nav > ul ul > li {
+/*-------------------submenu-------------------------*/
+ul.submenu {
   display: none;
+  position: absolute;
+  width: 150px;
+  border: 1px solid red;
+  margin-top: 5px;
+  background-color: black;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
 }
 
-/*section slider*/
+.submenu li a {
+  text-decoration: none;
+  border: 1px solid red;
+  width: 100px;
+  height: 30px;
+  color: black;
+  line-height: 30px;
+  text-decoration: none;
+  display: block;
+}
+
+/*---------------section slider--------------*/
 .article-left {
-  width: 50%;
+  width: 40%;
 }
 
 .article-right {
   width: 50%;
 }
 
+/*dodac gradient*/
 .slider {
   height: 500px;
-  background-color: lightgray;
+  background: rgba(255,255,255,0.05);
+  background: -moz-linear-gradient(top, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.58) 56%, rgba(250,250,250,0.78) 77%, rgba(218,216,216,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,0.05)), color-stop(56%, rgba(255,255,255,0.58)), color-stop(77%, rgba(250,250,250,0.78)), color-stop(100%, rgba(218,216,216,1)));
+  background: -webkit-linear-gradient(top, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.58) 56%, rgba(250,250,250,0.78) 77%, rgba(218,216,216,1) 100%);
+  background: -o-linear-gradient(top, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.58) 56%, rgba(250,250,250,0.78) 77%, rgba(218,216,216,1) 100%);
+  background: -ms-linear-gradient(top, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.58) 56%, rgba(250,250,250,0.78) 77%, rgba(218,216,216,1) 100%);
+  background: linear-gradient(to bottom, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.58) 56%, rgba(250,250,250,0.78) 77%, rgba(218,216,216,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dad8d8', GradientType=0 );
 }
 
-.slider__image img {
-  background-size: cover;
-  border: 1px solid black;
-  background-size: cover;
+section.slider div .slider__image {
   margin-top: 100px;
+  width: 450px;
+  height: 400px;
+  background-image: url("../images/black_chair.png");
+  background-size: cover;
+  background-position: -20px;
+  background-repeat: no-repeat;
 }
 
 div.slider__text {
-border: 1px solid black;
 margin-top: 100px;
-padding-top: 50px;
-padding-right: 50px;
+padding-top: 70px;
+padding-right: 70px;
 text-align: center;
-
 }
 
 div.slider__text > h1 {
-  padding-bottom: 25px;
+  padding-bottom: 30px;
   color: black;
   font-size: 40px;
   font-weight: bold;
   text-transform: uppercase;
 }
-div.slider__text h1 > span {
-  color: blue;
-}
 
 div.slider__text p {
-font-size: 18px;
+font-size: 12px;
+line-height: 1.7em;
+padding-bottom: 25px;
 }
 
 div.slider__text div.button-slider {
   margin: 0 auto;
   margin-top: 25px;
-  line-height: 50px;
-  border-radius: 15px;
-  background-color: lime;
-  height: 50px;
-  width: 150px;
+  line-height: 45px;
+  border-radius: 10px;
+  background-color: rgb(36,186,159);
+  height: 45px;
+  width: 230px;
   text-transform: uppercase;
-  font-size: 15px;
-
+  font-size: 18px;
 }
 
 div.slider__text .button-slider a {
@@ -169,6 +199,7 @@ div.arrow-left {
   color: red;
   top: 200px;
   left: 0px;
+  color: rgb(36,186,159);
 }
 
 div.arrow-right {
@@ -177,4 +208,79 @@ div.arrow-right {
   color: red;
   top: 200px;
   right: 0px;
+  color: rgb(36,186,159);
+}
+
+
+/*--------------section product---------------*/
+.products {
+  /*height: 350px;*/
+  /*border: 1px solid red;*/
+}
+
+section.products div.main__width {
+  border: 1px solid red;
+  height: 350px;
+}
+
+.products__small-box {
+  height: 250px;
+  margin-top: 30px;
+  width: 31%;
+  border: 1px solid red;
+  background-color: lightgray;
+  display: inline-block;
+}
+
+.middle {
+  margin-left:30px;
+  margin-right: 30px;
+}
+
+
+/*-----------------section offer--------------*/
+.offer {
+  height: 720px;
+  border: 1px solid red;
+  background-color: rgb(241, 241, 241);
+}
+
+section.offer div.main__width {
+  height: 720px;
+  border: 1px solid red;
+}
+
+.offer__header {
+  height: 100px;
+  border: 1px solid red;
+}
+
+.offer__wrapper {
+  height: 550px;
+  border: 1px solid red;
+}
+
+
+/*-----------------section contact--------------*/
+.contact {
+  height: 550px;
+  border: 1px solid red;
+}
+
+section.contact div.main__width {
+  height: 550px;
+  border: 1px solid red;
+}
+
+
+
+/*-----------------section footer--------------*/
+footer {
+  height: 110px;
+  border: 1px solid red;
+}
+
+footer div.main__width {
+  height: 110px;
+  border: 1px solid red;
 }
