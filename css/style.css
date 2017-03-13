@@ -57,12 +57,13 @@ body > header {
 
 header div {
   color: white;
-  border: 1px solid red;
+  /*border: 1px solid red;*/
 }
 
 header div a {
   display: inline-block;
   color: white;
+  font-weight: 700;
 }
 
 .header__logo {
@@ -83,7 +84,8 @@ body nav ul li {
 }
 
 nav > ul > li a:hover {
-  border-bottom: 2px solid #24ba9f;
+/*wymislic jakis fajny hover do linkow*/
+  /*border-bottom: 2px solid #24ba9f;*/
 }
 
 .header__main-nav li:hover ul.submenu {
@@ -223,38 +225,38 @@ div.arrow-right span{
 /*--------------section product---------------*/
 .products {
   height: 350px;
-  border: 1px solid red;
+  /*border: 1px solid red;*/
 }
 
 section.products div.main__width {
-  border: 1px solid red;
+  /*border: 1px solid red;*/
   height: 350px;
 }
 
 .products__small-box {
-  height: 225px;
+  position: relative;
+  height: 230px;
   margin-top: 30px;
   width: 31%;
-  border: 1px solid red;
-  background-color: lightgray;
+  /*border: 1px solid red;*/
   float: left;
 }
 
-div.products__small-box p.products__title {
-  border: 1px solid red;
-  margin-top: 100px;
-  height: 60px;
-  line-height: 40px;
-  font-size: 16px;
+p.products__title {
+  font-size: 15px;
   font-weight: 700;
-  background-color: rgba(255,246,246,0.5);
 }
 
-div.underline {
-  margin-bottom: 80px;
-  height: 20px;
-  border: 1px solid red;
-  background-color: red;
+div.products__transparent {
+  position: absolute;
+  top: 150px;
+  left: 0;
+  margin: 0 auto;
+  width: 310px;
+  height: 60px;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding-left: 10px;
+  /*border: 1px solid red;*/
 }
 
 .middle {
@@ -263,19 +265,38 @@ div.underline {
 }
 
 div.product__1 {
-  background-image: url("../images/box1_img.jpg");
-  background-size: contain;
-  /*background-position: 20px;*/
+  background: transparent url("../images/box1_img.jpg");
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
 div.product__2 {
-  background-image: url("../images/box2_img.jpg");
-  background-size: contain;
-  /*background-position: -20px;*/
+  background: transparent url("../images/box2_img.jpg");
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
+.products__border {
+  background: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  padding: 20px;
+}
+
+div.textunderline {
+  margin-left: -5px;
+  /*border: 1px solid red;*/
+  width: 140px;
+  height: 7px;
+  background-color: rgb(36, 186, 159);
+}
+
+section div.main__width div:last-child p{
+  /*border: 1px solid red;*/
+  margin-top: 15px;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.6);
+
+}
 
 /*-----------------section offer--------------*/
 .offer {
