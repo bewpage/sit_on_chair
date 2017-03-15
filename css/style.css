@@ -185,7 +185,7 @@ padding-bottom: 15px;
 div.slider__text div.button-slider {
   margin: 0 auto;
   border-radius: 8px;
-  background-color: rgb(36,186,159);
+  background-color: #24ba9f;
   line-height: 40px;
   height: 40px;
   width: 220px;
@@ -208,7 +208,7 @@ div.arrow-left span{
   font-size: 85px;
   top: 200px;
   left: 0px;
-  color: rgb(36,186,159);
+  color: #24ba9f;
 }
 
 div.arrow-right span{
@@ -218,7 +218,7 @@ div.arrow-right span{
   color: red;
   top: 200px;
   right: 0px;
-  color: rgb(36,186,159);
+  color: #24ba9f;
 }
 
 
@@ -299,26 +299,124 @@ section div.main__width div:last-child p{
 }
 
 /*-----------------section offer--------------*/
+
 .offer {
   height: 720px;
-  border: 1px solid red;
+  /*border: 1px solid red;*/
   background-color: rgb(241, 241, 241);
 }
 
 section.offer div.main__width {
   height: 720px;
-  border: 1px solid red;
+  padding: 60px;
+  /*border: 1px solid red;*/
 }
 
 .offer__header {
   height: 100px;
-  border: 1px solid red;
+  /*border: 1px solid red;*/
+}
+
+div.offer__header p{
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+div.offer__header div.textunderline {
+  margin-left: 0;
+  /*border: 1px solid red;*/
+  width: 271px;
+  height: 7px;
+  background-color: rgb(36, 186, 159);
 }
 
 .offer__wrapper {
   height: 550px;
-  border: 1px solid red;
+  /*border: 1px solid red;*/
 }
+
+/*#24ba9f - color cyan*/
+/*box na oferty*/
+
+ .price {
+  position: relative;
+  background-color: #f9f9f9;
+  border: 2px solid #d5d5d5;
+  height: 500px;
+  width: 31%;
+  margin-right: 30px;
+  padding-top: 30px;
+  text-align: center;
+}
+
+.price__last {
+  position: relative;
+  background-color: #f9f9f9;
+  border: 2px solid #d5d5d5;
+  height: 500px;
+  width: 31%;
+  text-align: center;
+  padding-top: 30px;
+  }
+
+section h2 {
+  color: #24ba9f;
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+
+/*circle for price boxes*/
+.offer__circletop {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  right: 0;
+  margin: auto auto;
+  border: 2px solid #d5d5d5;
+  display: block;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  float: left;
+  background-color: #f9f9f9;
+}
+
+.offer__innercircletop {
+  position: absolute;
+  top: -22px;
+  left: 0px;
+  right: 0;
+  margin: auto auto;
+  border: 0px solid #d5d5d5;
+  display: block;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  float: left;
+  background-color: #c2c2c2;
+}
+
+.offer__circleprice {
+  position: absolute;
+  top: 80px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  border: 2px solid #d5d5d5;
+  display: block;
+  border-radius: 50%;
+  width: 130px;
+  height: 130px;
+  float: left;
+  background-color: #f9f9f9;
+  padding-top: 25px;
+}
+
+
 
 
 /*-----------------section contact--------------*/
