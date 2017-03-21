@@ -177,7 +177,7 @@ div.slider__text > h1 > span {
 }
 
 div.slider__text p {
-font-size: 12px;
+font-size: 15px;
 line-height: 1.7em;
 padding-bottom: 15px;
 }
@@ -290,7 +290,7 @@ div.textunderline {
   background-color: rgb(36, 186, 159);
 }
 
-section div.main__width div:last-child p{
+section.products div div p {
   /*border: 1px solid red;*/
   margin-top: 15px;
   font-size: 14px;
@@ -413,9 +413,71 @@ section h2 {
   height: 130px;
   float: left;
   background-color: #f9f9f9;
-  padding-top: 25px;
+  padding-top: 20px;
 }
 
+/*---------------price box text style-----------*/
+
+section div.offer__circleprice div p {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #c2c2c2;
+    margin-top: 0;
+}
+
+.offer__price_big {
+    font-size: 45px;
+    font-weight: 700;
+    color: #c2c2c2;
+}
+
+.offer__price_small {
+    font-size: 15px;
+    font-weight: 700;
+    vertical-align: top;
+    color: #c2c2c2;
+}
+.offer__menu {
+    padding-top: 180px;
+}
+
+section.offer div.offer__menu ul li {
+    color: #b7b7b7;
+    font-size: 20px;
+    list-style-type: none;
+
+}
+
+.offer__darken {
+    width: 100%;
+    background-color: #e4e4e4;
+    line-height: 43px;
+    color: #939393;
+}
+
+.offer__lighten {
+    width: 100%;
+    background-color: #f1f1f1;
+    line-height: 43px;
+    color: #787878;
+}
+
+.offer__button {
+    margin: 0 auto;
+    margin-top: 120px;
+    width: 122px;
+    height: 35px;
+    line-height: 35px;
+    background-color: #24baa0;
+    border-radius: 9px;
+    box-shadow: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 16px;
+    text-align: center;
+    /*padding: 10px;*/
+}
 
 
 
