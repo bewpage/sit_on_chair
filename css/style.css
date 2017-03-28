@@ -43,7 +43,7 @@ a {
 
 /*color settings*/
 .cyan {
-  color: rgb(36, 186, 159);
+  color: #24ba9f;
   font-weight: 700;
 }
 
@@ -287,7 +287,7 @@ div.textunderline {
   /*border: 1px solid red;*/
   width: 140px;
   height: 7px;
-  background-color: rgb(36, 186, 159);
+  background-color: #24ba9f;
 }
 
 section.products div div p {
@@ -295,7 +295,6 @@ section.products div div p {
   margin-top: 15px;
   font-size: 14px;
   color: rgba(0, 0, 0, 0.6);
-
 }
 
 /*-----------------section offer--------------*/
@@ -308,7 +307,7 @@ section.products div div p {
 
 section.offer div.main__width {
   height: 720px;
-  padding: 60px;
+  padding: 60px 0;
   /*border: 1px solid red;*/
 }
 
@@ -323,12 +322,12 @@ div.offer__header p{
   text-transform: uppercase;
 }
 
-div.offer__header div.textunderline {
+.green-underline-long {
   margin-left: 0;
   /*border: 1px solid red;*/
-  width: 271px;
+  width: 310px;
   height: 7px;
-  background-color: rgb(36, 186, 159);
+  background-color: #24ba9f;
 }
 
 .offer__wrapper {
@@ -339,26 +338,26 @@ div.offer__header div.textunderline {
 /*#24ba9f - color cyan*/
 /*box na oferty*/
 
- .price {
-  position: relative;
-  background-color: #f9f9f9;
-  border: 2px solid #d5d5d5;
-  height: 500px;
-  width: 31%;
-  margin-right: 30px;
-  padding-top: 30px;
-  text-align: center;
+.price {
+    position: relative;
+    background-color: #f9f9f9;
+    border: 2px solid #d5d5d5;
+    height: 500px;
+    width: 31%;
+    margin-right: 30px;
+    padding-top: 30px;
+    text-align: center;
 }
 
 .price__last {
-  position: relative;
-  background-color: #f9f9f9;
-  border: 2px solid #d5d5d5;
-  height: 500px;
-  width: 31%;
-  text-align: center;
-  padding-top: 30px;
-  }
+    position: relative;
+    background-color: #f9f9f9;
+    border: 2px solid #d5d5d5;
+    height: 500px;
+    width: 31%;
+    text-align: center;
+    padding-top: 30px;
+}
 
 section h2 {
   color: #24ba9f;
@@ -469,7 +468,7 @@ section.offer div.offer__menu ul li {
     width: 122px;
     height: 35px;
     line-height: 35px;
-    background-color: #24baa0;
+    background-color: #24ba9f;
     border-radius: 9px;
     box-shadow: none;
     color: white;
@@ -489,9 +488,43 @@ section.offer div.offer__menu ul li {
 
 section.contact div.main__width {
   height: 550px;
+  padding: 60px 0;
   border: 1px solid red;
 }
 
+.form-left {
+    width: 65%;
+    float: left;
+}
+
+.form-left-data {
+    font-family: 'Raleway';
+    width: 635px;
+    height: 65px;
+    border: 1px solid #24ba9f;
+    opacity: 0.4;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    padding-left: 15px;
+    font-size: 30px;
+    font-weight: 200;
+    font-style: normal;
+    color: #939393;
+}
+
+.form-left-message {
+    font-family: 'Raleway';
+    width: 635px;
+    height: 187px;
+    border: 1px solid #24ba9f;
+    opacity: 0.4;
+    padding-left: 15px;
+    font-size: 30px;
+    font-weight: 200;
+    font-style: normal;
+    color: #939393;
+    margin-top: 15px;
+}
 
 
 /*-----------------section footer--------------*/
