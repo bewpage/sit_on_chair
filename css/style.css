@@ -599,13 +599,13 @@ div.checkbox01 input:checked + label::after {
 /*-----------------section footer--------------*/
 footer {
     height: 120px;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     vertical-align: bottom;
 }
 
 footer div.main__width {
     height: 110px;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
 }
 
 .footer__right {
