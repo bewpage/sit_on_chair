@@ -1,8 +1,12 @@
 document.addEventListener("DOMContentLoaded", function() {
 
-// submenu
+// slider
 
-
+var next = document.querySelector(".arrow-right");
+var back = document.querySelector(".arrows-left");
+var lists = document.querySelector(".sliderList").children;
+var index = 0;
+console.log(buttonPrev, buttonNext, lists)
 
 
 
