@@ -138,14 +138,14 @@ ul.submenu {
 
 /*---------------section slider--------------*/
 .article-left {
-  width: 40%;
+  width: 50%;
 }
 
 .article-right {
   width: 50%;
 }
 
-/*dodac gradient*/
+/* ---------------gradient --------------*/
 .slider {
   height: 500px;
   background: rgba(255,255,255,0.05);
@@ -158,16 +158,25 @@ ul.submenu {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dad8d8', GradientType=0 );
 }
 
-div.slider__image ul {
-  width: 600px;
+.slider__image {
   padding-top: 65px;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
-div.slider__image ul li img {
-  width: 600px;
+.image__list li {
+    width: 600px;
+    margin-left: -20px;
+    display: none;
+    list-style: none;
 }
+
+.image__list img {
+    width: 110%;
+}
+
+.image__list .showIt {
+    display: block;
+}
+
 
 div.slider__text {
 margin-top: 130px;
@@ -223,6 +232,7 @@ div.arrow-left span{
   top: 200px;
   left: 0px;
   color: #24ba9f;
+  cursor: pointer;
 }
 
 div.arrow-right span{
@@ -233,6 +243,7 @@ div.arrow-right span{
   top: 200px;
   right: 0px;
   color: #24ba9f;
+  cursor: pointer;
 }
 
 
@@ -361,6 +372,7 @@ div.offer__header p{
     margin-right: 30px;
     padding-top: 30px;
     text-align: center;
+    cursor: pointer;
 }
 
 .price__last {
@@ -371,6 +383,7 @@ div.offer__header p{
     width: 31%;
     text-align: center;
     padding-top: 30px;
+    cursor: pointer;
 }
 
 section h2 {
@@ -399,15 +412,15 @@ section h2 {
 
 .offer__innercircletop {
   position: absolute;
-  top: -22px;
+  top: -25px;
   left: 0px;
   right: 0;
   margin: auto auto;
   border: 0px solid #d5d5d5;
   display: block;
   border-radius: 50%;
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
   float: left;
   background-color: #c2c2c2;
 }
@@ -477,8 +490,9 @@ section.offer div.offer__menu ul li {
 }
 
 .offer__button {
-    margin: 0 auto;
-    margin-top: 120px;
+    position: absolute;
+    top: 440px;
+    left: 90px;
     width: 122px;
     height: 35px;
     line-height: 35px;
@@ -489,8 +503,48 @@ section.offer div.offer__menu ul li {
     text-transform: uppercase;
     font-size: 16px;
     text-align: center;
-    /*padding: 10px;*/
 }
+
+/*hoover*/
+
+.price:hover, .price__last:hover {
+    background-color: #24ba9f;
+    border: 1px solid #24ba9f;
+}
+
+.price:hover,
+.price__last:hover,
+.price:hover .offer__circleprice,
+.price__last:hover .offer__circleprice,
+.price:hover .offer__circleprice div p,
+.price__last:hover .offer__circleprice div p,
+.price:hover .offer__circleprice div span,
+.price__last:hover .offer__circleprice div span {
+    color: #24ba9f;
+}
+
+.price:hover .offer__circletop,
+.price__last:hover .offer__circletop {
+    background-color: #24ba9f;
+    border: 1px solid #24ba9f;
+}
+
+.price:hover .offer__button,
+.price__last:hover .offer__button {
+    background: #ffffff;
+    color: #24ba9f;
+}
+
+.price:hover .offer__list li:nth-child(2n+1),
+.price__last:hover .offer__list li:nth-child(2n+1){
+    background-color: white;
+}
+
+.price:hover .offer__innercircletop,
+.price__last:hover .offer__innercircletop {
+    background-color: white;
+}
+
 
 /*-----------------section calculator--------------*/
 
@@ -557,7 +611,7 @@ section.offer div.offer__menu ul li {
 }
 
 .checkbox label::before, .checkbox label::after {
-  border: 1px solid #27c7ab;
+  border: 1px solid #24ba9f;
   content: "";
   display: block;
   left: 0;
@@ -615,7 +669,7 @@ section.offer div.offer__menu ul li {
 }
 
 .application .green_button {
-  background-color: #27c7ab;
+  background-color: #24ba9f;
   color: white;
   text-align:center;
   text-transform: uppercase;
