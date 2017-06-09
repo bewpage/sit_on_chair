@@ -5,5 +5,5 @@ This is a simple single page site created during Coders Lab Programming Bootcamp
 HTML5, CSS, JS
 Dropdown menu, slider - CSS. Form validation - JavaScript.
 
-#Responsive Web Design
+# Responsive Web Design
 This page is not mobile friendly.
