@@ -763,12 +763,17 @@ section.offer div.offer__menu ul li {
   z-index: 2;
   position: absolute;
   top: 54px;
-  display:none;
+  display: none;
 }
+
 .list_panel li {
   margin-top:10px;
   cursor: pointer;
   color: #585858;
+}
+
+.display{
+    display: block;
 }
 
 .title {
